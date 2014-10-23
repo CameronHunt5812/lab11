@@ -20,12 +20,12 @@ def animate():
     global direction
     # Get the x and y co-ordinates of the circle
     x1, y1, x2, y2 = drawpad.coords(circle)
-    if x2 > drawpad.winfo_width(): 
+    if y2 > drawpad.winfo_width(): 
         direction = - 1
-    elif x1 < 0:
+    elif y1 < 0:
         direction = 1
     #Move our oval object by the value of direction
-    drawpad.move(circle,direction,0)
+    drawpad.move(circle,0,direction)
     # Wait for 1 millisecond, then recursively call our animate function
     drawpad.after(1, animate)
 
