@@ -20,7 +20,7 @@ def animate():
     global direction
     # Get the x and y co-ordinates of the circle
     x1, y1, x2, y2 = drawpad.coords(circle)
-    if y2 > drawpad.winfo_width(): 
+    if y2 > drawpad.winfo_height(): 
         direction = - 1
     elif y1 < 0:
         direction = 1
