@@ -16,10 +16,8 @@ drawpad.grid(row=0, column=0)
 
 # Create the oval
 circle = drawpad.create_oval(10, 10, 50, 50, fill='green')
-direction = 1
 # Create our animation function
 def animate():
-    
     # Get the x and y co-ordinates of the circle
     x1, y1, x2, y2 = drawpad.coords(circle)
     # Moove the cercle to the left side of the skreen
